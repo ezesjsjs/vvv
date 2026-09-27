@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>For You — A Little Letter</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor"></div>
+  <div class="cursor-blur"></div>
+
+  <!-- PARTICLES -->
+  <canvas id="particles"></canvas>
+
+  <!-- MUSIC -->
+  <button class="music-btn" id="musicBtn">
+    ♫
+  </button>
+
+  <audio id="bgMusic" loop>
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+
+  <!-- INTRO -->
+  <section class="intro" id="intro">
+
+    <div class="intro-content">
+
+      <p class="mini-title">
+        A LITTLE SOMETHING FOR YOU
+      </p>
+
+      <h1>
+        I wrote<br>
+        <span>something.</span>
+      </h1>
+
+      <p class="intro-text">
+        Bukan sesuatu yang besar.<br>
+        Tapi mungkin cukup untuk membuatmu tersenyum.
+      </p>
+
+      <button class="start-btn" id="startBtn">
+        <span>Open the letter</span>
+        <span class="arrow">→</span>
+      </button>
+
+    </div>
+
+    <div class="scroll-indicator">
+      <span>SCROLL</span>
+      <div></div>
+    </div>
+
+  </section>
+
+
+  <!-- ENVELOPE -->
+  <section class="letter-section" id="letter">
+
+    <div class="section-number">01</div>
+
+    <div class="envelope-wrapper" id="envelopeWrapper">
+
+      <div class="envelope">
+
+        <div class="envelope-back"></div>
+
+        <div class="letter-paper">
+
+          <div class="paper-content">
+
+            <span class="paper-label">
+              A LETTER FOR YOU
+            </span>
+
+            <h2>
+              Dear <span id="nameText">You</span>,
+            </h2>
+
+            <p id="typingText"></p>
+
+            <div class="signature">
+              — someone who cares
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="envelope-front"></div>
+
+        <div class="envelope-flap"></div>
+
+        <div class="seal">
+          <span>♡</span>
+        </div>
+
+      </div>
+
+      <p class="click-hint">
+        click the envelope
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- MESSAGE -->
+  <section class="message-section">
+
+    <div class="message-container">
+
+      <p class="eyebrow">
+        02 — A FEW WORDS
+      </p>
+
+      <h2>
+        Some things<br>
+        are better <em>felt</em><br>
+        than explained.
+      </h2>
+
+      <div class="long-message">
+
+        <p>
+          Mungkin aku nggak selalu punya cara yang tepat
+          untuk mengatakan apa yang aku pikirkan.
+          Kadang beberapa hal justru terasa lebih mudah
+          ditulis daripada diucapkan.
+        </p>
+
+        <p>
+          Jadi kalau suatu hari kamu membuka halaman ini
+          dan bertanya-tanya kenapa aku membuatnya,
+          jawabannya sederhana:
+          karena ada seseorang yang menurutku pantas
+          mendapatkan sesuatu yang sedikit berbeda.
+        </p>
+
+        <p>
+          Terima kasih sudah menjadi bagian dari cerita
+          yang mungkin kecil, tapi tetap berarti.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PHOTO SECTION -->
+  <section class="gallery-section">
+
+    <div class="gallery-header">
+
+      <p class="eyebrow">
+        03 — LITTLE MEMORIES
+      </p>
+
+      <h2>
+        Moments worth<br>
+        <em>remembering.</em>
+      </h2>
+
+    </div>
+
+    <div class="gallery">
+
+      <div class="photo-card card-one">
+        <img src="assets/foto1.jpg" alt="Memory 1">
+        <span>01</span>
+      </div>
+
+      <div class="photo-card card-two">
+        <img src="assets/foto2.jpg" alt="Memory 2">
+        <span>02</span>
+      </div>
+
+      <div class="photo-card card-three">
+        <img src="assets/foto3.jpg" alt="Memory 3">
+        <span>03</span>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- TIMELINE -->
+  <section class="timeline-section">
+
+    <p class="eyebrow">
+      04 — OUR LITTLE STORY
+    </p>
+
+    <h2>
+      A few moments<br>
+      along the way.
+    </h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-content">
+
+          <span>THE BEGINNING</span>
+
+          <h3>
+            The day it started
+          </h3>
+
+          <p>
+            Semua cerita pasti punya satu titik awal.
+            Ini mungkin salah satunya.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-content">
+
+          <span>THE MOMENT</span>
+
+          <h3>
+            Something changed
+          </h3>
+
+          <p>
+            Ada momen yang kelihatannya biasa,
+            tapi entah kenapa akhirnya tetap diingat.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-content">
+
+          <span>NOW</span>
+
+          <h3>
+            And here we are.
+          </h3>
+
+          <p>
+            Entah cerita ini akan berjalan sejauh apa,
+            setidaknya halaman ini pernah dibuat.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FINAL -->
+  <section class="final-section" id="final">
+
+    <div class="final-content">
+
+      <div class="heart">
+        ♡
+      </div>
+
+      <p class="eyebrow">
+        ONE LAST THING
+      </p>
+
+      <h2>
+        If you ever<br>
+        forget...
+      </h2>
+
+      <p class="final-text">
+        just remember that<br>
+        someone once took the time<br>
+        to make this little world for you.
+      </p>
+
+      <button class="again-btn" id="againBtn">
+        Read it again ↗
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
